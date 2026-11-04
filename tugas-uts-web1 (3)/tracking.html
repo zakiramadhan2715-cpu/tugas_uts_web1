@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Pengiriman - Toko Buku UT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Buku Universitas terbuka</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="stok.html">Stok Buku</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Lacak Pengiriman</h2>
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+            <input type="text" id="searchDO" placeholder="Masukkan Nomor DO (cth: 20230012)" style="padding: 10px; flex-grow: 1; border: 1px solid #ccc; border-radius: 4px;">
+            <button id="btnCariDO" class="btn" style="width: 150px;">Cari</button>
+        </div>
+
+        <div id="hasilTracking" style="margin-top: 30px;"></div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
